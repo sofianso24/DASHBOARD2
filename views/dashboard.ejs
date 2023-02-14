@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+outline" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <!---------header---------->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <i class="fa-duotone fa-magnifying-glass"></i>
+            </div>
+            <div class="header-right">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <span class="material-symbols-outlined"></span>
+            </div>
+        </header>
+        <!---------end header---------->
+
+        <!---------sidebar---------->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <img src="">
+                </div>
+                <img src="" alt="" onclick="closeSidebar()">
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item"> <a href="">DASHBOARD</a> </li>
+                <!-- <i class="fa-regular fa-grid-horizontal"></i> -->
+                <li class="sidebar-list-item"> <a href="/table">PATIENTS</a> </li>
+                <!-- <i class="fa-solid fa-users"></i> -->
+                <li class="sidebar-list-item"> <a href="/form.ejs">RENDEZ_VOUS</a> </li>
+                 <!-- <i class="fa-solid fa-handshake"></i> -->
+            </ul>
+        </aside>
+        <!---------end sidebar---------->
+
+        <!---------main---------->
+        <main class="main-container">
+              <div class="main-title">
+                  <p class="font-weight-bold">DASHBOARD</p>
+              </div>
+              <div class="main-cards">
+                  <div class="card">
+                       <div class="card-inner">
+                           <p class="text-primary">PATIENTS</p>
+                           <span class="material-symbols-outlined text-blue"></span>
+                       </div>
+                       <span class="text-primary font-weight-bold">10</span>
+                  </div>
+                  <div class="card">
+                       <div class="card-inner">
+                           <p class="text-primary">HOMME</p>
+                           <span class="material-symbols-outlined text-orange"> </span>
+                       </div>
+                       <span class="text-primary font-weight-bold">6</span>
+                  </div>
+                  <div class="card">
+                       <div class="card-inner">
+                           <p class="text-primary">FEMME</p>
+                           <span class="material-symbols-outlined text-green"></span>
+                       </div>
+                       <span class="text-primary font-weight-bold">4</span>
+                  </div>
+              </div>
+              <div class="charts">
+                   <div class="charts-card">
+                       <p class="chart-title"> </p>
+                       <div id="bar-chart"></div>
+                   </div>
+                   <div class="charts-card">
+                       <p class="chart-title">purchase and sales orders</p>
+                       <div id="area-chart"></div>
+                   </div>
+              </div>
+        </main>
+        <!---------end main---------->
+    </div>
+
+    <!---------apexcharts---------->
+    <div style="width: 800px;"><canvas id="bar-chart"></canvas></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" integrity="sha512-RLWwcf0Pb2NghIfkaQms354xRV36EYjXLWKSN8QHiHqNq3KGj0DjMc9D1zzO7UsREkGU/xCLAJi/hVcKSuZ5Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <!---------custom JS---------->
+
+
+
+
+
+
+    <script src="scripts.js"> </script>
+</body>
+
+</html>
